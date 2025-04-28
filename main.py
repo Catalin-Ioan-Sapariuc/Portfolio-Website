@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(layout ="wide")
 
@@ -13,7 +14,7 @@ with col2:
     content="""
     I am a mathematician with a strong active interest in Data Analysis and Data Science.
 
-    As a graduate student, I specialized in stiff high-speed reactive flows, modeled by the reactive Euler equations. 
+    As a graduate student, I sudied stiff high-speed reactive flows, modeled by the reactive Euler equations. 
     As part of this research, I developed fractional step finite volume methods, and conducted extensive analysis 
     of their accuracy and the stability. 
 
@@ -30,3 +31,18 @@ with col2:
     Below you will find some of the projects I have built. Feel free to contact me! 
     """
     st.info(content)
+
+
+col3, col4 = st.columns(2)
+
+df = pd.read_csv('data.csv', sep=";")
+
+with col3:
+    for index, row in df.iterrows():
+        if index < 3 and index%2 == 0:
+            st.header(row['title'])
+
+with col4:
+    for index, row in df.iterrows():
+        if index < 3 and index%2 != 0:
+            st.header(row['title'])
