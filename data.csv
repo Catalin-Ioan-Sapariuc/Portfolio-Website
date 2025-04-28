@@ -1,6 +1,6 @@
 title;description;url;image
-Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://todolistwebapp-9otf.onrender.com/Ê;1.png
-Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://pythonhow.com;2.png
+Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://todolistwebapp-9otf.onrender.com/;1.png
+Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://github.com/Catalin-Ioan-Sapariuc/Portfolio-Website;2.png
 PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;;3.png
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;;4.png
 Positive News Site;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;;5.png
@@ -13,7 +13,7 @@ Webcam Motion Detector;A program that monitors the computer webcam and sends an 
 Typing Analyzer;A program that monitors the computer keyboard and returns the most typed words of the session.;;12.png
 Internet Speed Analysis;A program that records the internet speed every few seconds and plots the values on the browser.;;13.png
 Monitoring Data;A program that monitors a particular website and periodically records the data to a remote server.;;14.png
-Visualizing Data;A program that visualizes the data collected in the previous monitoring program. ;;15.png
+Visualizing Data;A program that visualizes the data collected in the previous monitoring program.;;15.png
 Visualizing Weather Forecast;A data web app that visualizes the weather forecast for the next five days of any city.;;16.png
 Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;;17.png
 School Management System;A desktop PyQt6 GUI app for managing complex university data with an SQL database backend.;;18.png
