@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 st.set_page_config(layout ="wide")
 
@@ -32,17 +33,35 @@ with col2:
     """
     st.info(content)
 
+st.header("Past Projects:")
 
 col3, col4 = st.columns(2)
 
-df = pd.read_csv('data.csv', sep=";")
+df = pd.read_csv('data.csv', sep=",")
 
 with col3:
     for index, row in df.iterrows():
-        if index < 3 and index%2 == 0:
+        if index < 6 and index%2 == 0:
             st.header(row['title'])
+            st.write(row['description'])
+            if index == 0:
+                image = st.image("images/"+ row['image'], width = 500)
+                st.write("\n\n\n\n\n\n")
+                st.write(f"[Source Code:]({row['urlsource']})")
+                st.write(f"[Implemented Solution:]({row['urlsol']})")
+                st.write("\n\n\n\n\n\n")
+            else:
+                image = st.image("images/"+ row['image'])
+            #st.image("images/"+ row['image'], width=400)
+                st.write(f"[Source Code:]({row['urlsource']})")
+                st.write(f"[Implemented Solution:]({row['urlsol']})")
 
 with col4:
     for index, row in df.iterrows():
-        if index < 3 and index%2 != 0:
+        if index < 6 and index%2 != 0:
             st.header(row['title'])
+            st.write(row['description'])
+            #st.image("images/"+ row['image'], width = 350)
+            image = st.image("images/"+ row['image'])
+            st.write(f"[Source Code:]({row['urlsource']})")
+            st.write(f"[Implemented Solution:]({row['urlsol']})")
