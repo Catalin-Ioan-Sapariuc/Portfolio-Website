@@ -15,11 +15,11 @@ with col2:
     content="""
     I am a mathematician with a strong active interest in Data Analysis and Data Science.
 
-    As a graduate student, I sudied stiff high-speed reactive flows, modeled by the reactive Euler equations. 
+    As a graduate student, I studied stiff high-speed reactive flows, modeled by the reactive Euler equations. 
     As part of this research, I developed fractional step finite volume methods, and conducted extensive analysis 
-    of their accuracy and the stability. 
+    of their accuracy and stability. 
 
-    In more recent years, I have transitioned to Python programming, and built end to end projects in areas 
+    More recently, I have transitioned to Python programming, and built end to end projects in areas 
     such as Recommender Systems and Natural Language Processing (NLP). I often use the power and simplicity of Python 
     to automate many tasks and to develop application. 
 
