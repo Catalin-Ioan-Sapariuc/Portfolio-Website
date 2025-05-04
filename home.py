@@ -45,13 +45,13 @@ with col3:
             st.header(row['title'])
             st.write(row['description'])
             if index == 0:
-                image = st.image("images/"+ row['image'], width = 500)
+                st.image("images/"+row['image'], width = 500)
                 st.write("\n\n\n\n\n\n")
                 st.write(f"[Source Code:]({row['urlsource']})")
                 st.write(f"[Implemented Solution:]({row['urlsol']})")
                 st.write("\n\n\n\n\n\n")
             else:
-                image = st.image("images/"+ row['image'])
+                st.image("images/"+row['image'])
             #st.image("images/"+ row['image'], width=400)
                 st.write(f"[Source Code:]({row['urlsource']})")
                 st.write(f"[Implemented Solution:]({row['urlsol']})")
@@ -62,6 +62,6 @@ with col4:
             st.header(row['title'])
             st.write(row['description'])
             #st.image("images/"+ row['image'], width = 350)
-            image = st.image("images/"+ row['image'])
+            st.image("images/"+row['image'])
             st.write(f"[Source Code:]({row['urlsource']})")
             st.write(f"[Implemented Solution:]({row['urlsol']})")
