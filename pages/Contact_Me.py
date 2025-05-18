@@ -1,4 +1,4 @@
-## Here is the email app password set up for sapariuc@gmail.com: luue pfjc ittr bgnm 
+## Here is the email app password set up for sapariuc@gmail.com: 
 
 import streamlit as st
 from send_email import send_email
