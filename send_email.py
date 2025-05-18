@@ -1,9 +1,10 @@
 ## Here is the email app password set up for sapariuc@gmail.com: luue pfjc ittr bgnm 
 import smtplib, ssl
+import os
 
 def send_email(message):
 
-    password = "vnmi sdiq kuil lubz"
+    password = os.getenv("GOOGLE_APP_EMAIL_PWD")
     #password = input("Type your password and press enter:")
     sender_email = "sapariuc@gmail.com" 
 
